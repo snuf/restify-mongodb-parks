@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <title>Map of Parks and Historic Sites</title>
-    <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
   <!--[if lte IE 8]>
-      <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
   <![endif]-->
-  <script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
   <link href='//fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> <style type="text/css">
     body {
@@ -37,10 +37,10 @@
 <body>
   <h1 id="title">National Parks</h1>
   <span id="launcher">
-    <a href="https://openshift.redhat.com/app/console/application_type/custom?name=parks&amp;cartridges%5B%5D=nodejs-0.10&amp;cartridges%5B%5D=mongodb-2.4&amp;initial_git_url=https%3A%2F%2Fgithub.com%2Fryanj%2Frestify-mongodb-parks.git"><img alt="Run me on OpenShift" src="https://launch-shifter.rhcloud.com/launch/RUN%20ME%20ON.svg" style="max-width:100%;"></a>
+    <a href="https://openshift.redhat.com/app/console/application_type/custom?name=parks&amp;cartridges%5B%5D=nodejs-0.10&amp;cartridges%5B%5D=mongodb-2.4&amp;initial_git_url=https%3A%2F%2Fgithub.com%2Fsnuf%2Frestify-mongodb-parks.git"><img alt="Run me on OpenShift" src="https://launch-shifter.rhcloud.com/launch/RUN%20ME%20ON.svg" style="max-width:100%;"></a>
   </span>
   <div id="map"></div>
-  <script src="//cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
   <script>
     var map = L.map('map').setView([37.8, -122.3], 10);
     var markerLayerGroup = L.layerGroup().addTo(map);
