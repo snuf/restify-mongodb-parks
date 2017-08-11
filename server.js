@@ -15,7 +15,12 @@ app.get('/parks/within', db.selectBox);
 app.get('/parks', db.selectAll);
 app.get('/status', function (req, res, next)
 {
-  res.send("{status: 'ok'}");
+  // http://parks-elb-sg-parks-157421118.eu-central-1.elb.amazonaws.com/parks/within?lat1=37.412164190504456&lon1=-120.09635925292969&lat2=37.899239630600185&lon2=-119.48936462402344
+  req.query.lat1 = "37.4121";
+  req.query.lon1 = "-120.0963";
+  req.query.lat2 = "37.8992";
+  req.query.lon2 = "-119.4893";
+  rows = db.selectBox(req, res, next);
 });
 
 app.get('/', function (req, res, next)

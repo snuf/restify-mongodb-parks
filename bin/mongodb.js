@@ -64,7 +64,7 @@ function select_box(req, res, next){
       lon1 = Number(query.lon1),
       lat2 = Number(query.lat2),
       lon2 = Number(query.lon2);
-  var limit = (typeof(query.limit) !== "undefined") ? query.limit : 40;
+  var limit = (typeof(query.limit) !== "undefined") ? query.limit : 140;
   if(!(Number(query.lat1) 
     && Number(query.lon1) 
     && Number(query.lat2) 

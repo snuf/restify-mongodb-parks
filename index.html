@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script type="text/javascript">
+     var timerStart = Date.now();
+  </script>
+  <META HTTP-EQUIV="refresh" CONTENT="10">
+  <meta http-equiv="Cache-Control" content="no-store" />
   <title>Map of Parks and Historic Sites</title>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
   <!--[if lte IE 8]>
@@ -77,5 +82,13 @@
     map.whenReady(getPins)
 
   </script>
+  <script type="text/javascript">
+             $(document).ready(function() {
+                 console.log("Time until DOMready: ", Date.now()-timerStart);
+             });
+             $(window).load(function() {
+                 console.log("Time until everything loaded: ", Date.now()-timerStart);
+             });
+   </script>
 </body>
 </html>
