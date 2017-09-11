@@ -10,6 +10,7 @@ var db = mongojs(db_config, [collection] );
 
 db.on('error', function (err) {
   console.log('database error', err)
+  process.exit()
 })
  
 db.on('connect', function () {
