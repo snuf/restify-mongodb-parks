@@ -15,8 +15,8 @@ var autoconfig = function (config_overrides){
   if(db_config[db_config.length - 1] !== "/"){
     db_config += '/';
   }
-if(options != null && options.length > 1) {
-    options = "?"+options
+  if(options != null && options.length > 1) {
+    options = "?"+options;
   }
   config.add({db_config: db_config+collection+options});
   return config;
